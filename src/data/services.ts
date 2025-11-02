@@ -2,15 +2,15 @@ import { Service } from '../types';
 
 export const services: Service[] = [
   {
-    id: 'digital-marketing',
-    title: 'Digital Marketing',
-    description: 'Strategic digital marketing solutions to boost your online presence and drive growth through SEO, PPC, and social media campaigns.',
+    id: 'Cloud, Integration & DevOps Services',
+    title: 'Cloud & DevOps Services',
+    description: 'Modernizing business operations with secure cloud migrations, seamless system integrations, and infrastructure automation for agile performance.',
     icon: 'megaphone',
     features: [
-      'Search Engine Optimization (SEO)',
-      'Pay-Per-Click Advertising',
-      'Social Media Marketing',
-      'Email Marketing Campaigns'
+      'Cloud Consulting & Migration',
+      'System Integration',
+      'DevOps Automation',
+
     ]
   },
   {
@@ -38,15 +38,13 @@ export const services: Service[] = [
     ]
   },
   {
-    id: 'GraphicsDesign',
-title: 'Graphic Design',
-description: 'Innovative design solutions that elevate your brand and captivate your audience.',
+    id: 'Quality Assurance & Ongoing Support',
+title: 'Quality Assurance & Ongoing Support',
+description: 'Comprehensive testing and managed support to ensure software reliability, security, and continuous improvement.',
 icon: 'palette',
 features: [
-  'Brand Identity Development',
-  'Print and Digital Design',
-  'UI/UX Design',
-  'Illustration and Artwork'
+  'Quality Assurance & Testing',
+  'Support & Maintenance',
 
     ]
   },
@@ -62,18 +60,7 @@ features: [
       'App Maintenance'
     ]
   },
-  {
-    id: 'videoEditing',
-title: 'Video Editing',
-description: 'Professional video editing services that transform your footage into captivating visual stories.',
-icon: 'film',
-features: [
-  'Creative Editing and Effects',
-  'Color Grading and Correction',
-  'Audio Enhancement',
-  'Custom Transitions and Titles'
-]
-  },
+  
   {
     id: 'data-analytics',
     title: 'Data Analytics',
@@ -86,16 +73,5 @@ features: [
       'Analytics Consulting'
     ]
   },
-  {
-    id: 'ui-ux-design',
-    title: 'UI/UX Design',
-    description: 'Create engaging user experiences with our professional design services.',
-    icon: 'palette',
-    features: [
-      'User Interface Design',
-      'User Experience Design',
-      'Prototyping',
-      'Design Systems'
-    ]
-  }
+  
 ];

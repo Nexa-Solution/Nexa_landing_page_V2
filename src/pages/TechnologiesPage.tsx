@@ -6,19 +6,22 @@ const products = [
   {
     title: "AI Chatbot",
     description: "An intelligent assistant that helps users find answers instantly, automate workflows, and boost productivity.",
-    image: "/byfluence.png",
-    url: "https://byfluence.com/ "
+    image: "/byfluence.png",             // Desktop image
+    mobileImage: "/1730878540087.jpeg", // Mobile-fitted image you provide
+    url: "https://byfluence.com/"
   },
   {
     title: "Realtime Analytics",
     description: "Monitor your platform’s performance, usage, and user behavior with live, actionable insights.",
     image: "/Add a heading.png",
-    url: "https://https://videyooadz.com/en-US"
+    mobileImage: "/Add a heading-mobile.png",
+    url: "https://videyooadz.com/en-US"
   },
   {
     title: "Smart Notifications",
     description: "Get notified about important events, updates, and trends tailored to your needs.",
     image: "/3.png",
+    mobileImage: "/3-mobile.png",
     url: "https://notifications.yourcompany.com"
   }
 ];
@@ -87,16 +90,21 @@ const TechnologiesPage = () => {
                   animate="visible"
                   variants={cardVariants}
                   onClick={() => handleCardClick(product.url)}
-                  className="relative group w-full aspect-[3.57/1] cursor-pointer rounded-xl shadow-xl overflow-hidden border border-white/20"
-                  style={{
-                    minHeight: "250px",
-                    maxHeight: "400px"
-                  }}
+                  className="relative group w-full aspect-[4/5] sm:aspect-[3.57/1] cursor-pointer rounded-xl shadow-xl overflow-hidden border border-white/20"
+                  // aspect-[4/5] = taller card for mobile
+                  // sm:aspect-[3.57/1] = wide for desktop/tablet
                 >
+                  {/* Desktop image (hidden on mobile) */}
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 hidden sm:block"
+                  />
+                  {/* Mobile image (only on mobile) */}
+                  <img
+                    src={product.mobileImage}
+                    alt={product.title}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 block sm:hidden"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent z-10" />
                   <div className="relative z-20 flex flex-col justify-end h-full p-8">

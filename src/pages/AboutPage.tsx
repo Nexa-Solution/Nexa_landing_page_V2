@@ -17,18 +17,18 @@ const AboutPage = () => {
   const services = [
     {
       icon: Video,
-      title: 'Video Editing',
-      description: 'Transform raw footage into captivating stories through high-quality visuals and seamless editing.'
+      title: 'Custom Software & Application Development',
+      description: 'Empower your business with tailored web, mobile, and enterprise platforms designed for high performance and real-world impact.'
     },
     {
       icon: Globe,
-      title: 'Digital Marketing',
-      description: 'Enhance your brand\'s presence through SEO, content marketing, and data-driven strategies.'
+      title: 'Data Analytics & Insights',
+      description: 'Unlock actionable intelligence from your data, powering informed decisions and optimized business performance.'
     },
     {
       icon: Palette,
-      title: 'Graphic Design',
-      description: 'Create stunning visuals that reflect your brand identity and speak to your audience.'
+      title: 'Quality Assurance & Continuous Support',
+      description: 'Deliver reliable, secure software with comprehensive testing and dedicated support for ongoing excellence and growth.'
     },
     {
       icon: Code,
