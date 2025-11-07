@@ -30,7 +30,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-white mb-2">Our Location</h3>
-                  <p className="text-gray-400">Megenagna Avenue , Addis Abeba ,
+                  <p className="text-gray-400">Summit 72 National Building , Addis Abeba ,
 </p>
                 </div>
               </div>
@@ -43,7 +43,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-white mb-2">Email Us</h3>
-                  <p className="text-gray-400">Support@Nexait-Tech.com</p>
+                  <p className="text-gray-400">support@byfluence.com</p>
                 </div>
               </div>
             </div>
@@ -55,7 +55,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-white mb-2">Call Us</h3>
-                  <p className="text-gray-400"> +251 932 00 5810</p>
+                  <p className="text-gray-400"> +251 957 56 9292</p>
                 </div>
               </div>
             </div>

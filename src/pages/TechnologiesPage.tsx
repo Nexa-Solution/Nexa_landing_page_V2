@@ -4,24 +4,24 @@ import { Rocket, Clock, Bell } from 'lucide-react';
 
 const products = [
   {
-    title: "AI Chatbot",
-    description: "An intelligent assistant that helps users find answers instantly, automate workflows, and boost productivity.",
+    title: "E-Commerce Platform",
+    description: "An all in one e-commerce platform for your business.",
     image: "/byfluence.png",             // Desktop image
-    mobileImage: "/1730878540087.jpeg", // Mobile-fitted image you provide
+    mobileImage: "mob_1.png", // Mobile-fitted image you provide
     url: "https://byfluence.com/"
   },
   {
-    title: "Realtime Analytics",
-    description: "Monitor your platform’s performance, usage, and user behavior with live, actionable insights.",
+    title: "Talent Outsourcing Platform",
+    description: "A platform for finding and hiring talent from around the world.",
     image: "/Add a heading.png",
-    mobileImage: "/Add a heading-mobile.png",
+    mobileImage: "/mob_2.png",
     url: "https://videyooadz.com/en-US"
   },
   {
-    title: "Smart Notifications",
-    description: "Get notified about important events, updates, and trends tailored to your needs.",
+    title: "Marketign Agency Platform",
+    description: "A platform for managing your marketing campaigns and tracking your results.",
     image: "/3.png",
-    mobileImage: "/3-mobile.png",
+    mobileImage: "/mob_3.png",
     url: "https://notifications.yourcompany.com"
   }
 ];
@@ -91,8 +91,6 @@ const TechnologiesPage = () => {
                   variants={cardVariants}
                   onClick={() => handleCardClick(product.url)}
                   className="relative group w-full aspect-[4/5] sm:aspect-[3.57/1] cursor-pointer rounded-xl shadow-xl overflow-hidden border border-white/20"
-                  // aspect-[4/5] = taller card for mobile
-                  // sm:aspect-[3.57/1] = wide for desktop/tablet
                 >
                   {/* Desktop image (hidden on mobile) */}
                   <img
@@ -109,7 +107,10 @@ const TechnologiesPage = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent z-10" />
                   <div className="relative z-20 flex flex-col justify-end h-full p-8">
                     <h2 className="text-2xl font-bold text-white drop-shadow mt-2 mb-2">{product.title}</h2>
-                    <p className="text-gray-200 drop-shadow text-center">{product.description}</p>
+                    {/* Description only visible on desktop */}
+                    <p className="hidden sm:block text-gray-200 drop-shadow text-center">
+                      {product.description}
+                    </p>
                   </div>
                 </motion.div>
               ))}
